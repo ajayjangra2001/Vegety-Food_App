@@ -1,0 +1,1577 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Eater&family=Pacifico&display=swap");
+
+
+/* ########################################################################################## */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* #                                       NAVBAR                                           # */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* ########################################################################################## */
+
+.nav-bar-cont {
+  height : 64px;
+  width : 100%;
+  position: sticky;
+  top : 0;
+  display: flex;
+  background-color: black;
+  padding : 1rem 0;
+  color : white;
+  z-index: 10000;
+}
+
+.nav-left-part {
+  width : 20%;
+  height : 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-middle-part {
+  width : 75%;
+  height : 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center ;
+}
+.nav-right-part {
+  width : 5%;
+  height : 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color : white;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-weight: 300;
+}
+
+.link:hover {
+  color : white;
+  background-color: rgba(220, 220, 220, 0.438);
+}
+
+.active-class {
+  border-bottom: 2px solid rgb(92, 181, 72);
+}
+
+.unactive {
+  color : white;
+}
+
+.nav-bar-slider-cont {
+  position: absolute;
+  right : 0;
+  top : 0;
+  height : 100vh;
+  width : 45%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+
+.nav-bar-slider-cont-top-part {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  align-items: center;
+  width : 100%;
+}
+
+.slider-left-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-slider-cont-bottom-part {
+  margin-top: 3rem;
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height : 45vh;
+}
+
+.adminBtn:hover {
+  /* color : black !important; */
+  background-color: rgba(220, 220, 220, 0.438) !important;
+}
+
+
+.user-dropdownItems {
+  position: relative;
+}
+
+.user-menu-items {
+  position: absolute;
+  z-index: 10;
+  height : 10rem;
+  width : 10rem;
+  background-color: black;
+  color : white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.user-menu-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width : 100%;
+  height : 50%;
+}
+
+.user-menu-items > .user-menu-item:hover {
+  cursor: pointer;
+  background-color: rgb(92, 181, 72);
+}
+
+
+
+/* ########################################################################################## */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* #                                     HOME PAGE                                          # */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* ########################################################################################## */
+
+/* --------------------- Home Page - Banner - styling ---------------------- */
+
+.banner-cont {
+  height: 90vh;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+
+.banner-left-cont {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-information {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-information h1 {
+  font-family: Verdana, sans-serif;
+  font-size: 4rem;
+}
+
+.banner-left-cont span {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+}
+
+.banner-right-cont {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* --------------------- Home Page - Special Dishes - styling ---------------------- */
+
+.special-dish-cont {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.special-top-cont {
+  text-align: center;
+  color: rgb(92, 181, 72);
+}
+
+.special-top-cont span {
+  color: gray;
+}
+
+.special-bottom-cont {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.my-card {
+  border: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.my-card:hover {
+  cursor: pointer;
+  transform: translate(1.1);
+  transform: scaleY(1.1);
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.middle-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* -------------------------- Home Page - Fresh Vegetable - Styling ------------------ */
+
+.fved-cont {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  padding: 1.5rem;
+}
+
+.fved-left-cont {
+  width: 50%;
+}
+
+.fved-left-cont img {
+  width: 80%;
+  height: 80%;
+}
+
+.fved-right-cont p {
+  margin-top: 2rem;
+  color: rgb(85, 84, 84);
+}
+
+.learn-more-btn {
+  background-color: #323d36;
+  color: white;
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 40px;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.learn-more-btn:hover {
+  cursor: pointer;
+  translate: 0% 2%;
+}
+
+/* -------------------------- Home Page - Top Plans - Styling ------------------ */
+
+.topPlan-cont {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: black;
+
+}
+
+.topPlan-top-cont {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.topPlan-top-cont span {
+  color: rgb(156, 156, 156);
+}
+
+.topPlan-middle-cont {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  position: relative;
+  width: 50%;
+}
+
+/* -------------------------- Home Page - Chef Details - Styling ------------------ */
+
+.chef-details-cont {
+  margin-top: 3rem;
+  display: flex;
+  background-color: white;
+  padding: 2rem;
+  width: 100%;
+}
+
+.chef-left-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.chef-right-cont {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chef-right-cont img {
+  height: 70%;
+  width: 70%;
+}
+
+.chef-left-cont span {
+  color: gray;
+}
+
+/* -------------------------- Home Page - Testonomial - Styling ------------------ */
+
+.testonomial-cont {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: black;
+}
+
+.testo-card-top-cont {
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-testonomial-cont {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.testo-card-cont {
+  width: 50%;
+  padding-top: 1rem;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom: 8px solid rgb(92,181,72);
+  border-top: 8px solid rgb(92,181,72);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.testo-card-middle-cont p i {
+	font-size: 2rem;
+  color: rgb(92, 181, 72);
+}
+
+/* -------------------------- Home Page - Footer Section - Styling ------------------ */
+
+.footer-cont {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont span {
+  color: rgb(92, 92, 92);
+
+  margin-top: 1rem;
+}
+
+.icon {
+  color: green;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 50%;
+  margin: 1rem;
+  margin-left: 0;
+}
+
+/* ########################################################################################## */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* #                                     ABOUT US PAGE                                      # */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* ########################################################################################## */
+
+.about-top-part {
+  height: 85vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-top-part .video {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.video-overlay {
+  background-image: linear-gradient(to bottom right, #454545, #36302e);
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.video-overlay h1 {
+  font-size: 7rem;
+}
+
+.howItWorks-cont,
+.image-gallery {
+  margin-top: 2rem;
+  padding: 3rem;
+}
+
+.about-middile-part {
+  margin-top: 3rem;
+  display: flex;
+}
+
+.aboutus-middle-left-cont {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-middle-right-cont {
+  width: 85%;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 1rem 6rem;
+}
+
+.paragraph-cont > p {
+  color: rgb(53, 53, 53);
+}
+
+.about-awasome-features-part {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.awasome-left-cont {
+  width: 85%;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  justify-content: space-evenly;
+}
+
+.awasome-right-cont {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awasome-card:hover {
+  cursor: pointer;
+  transform: scaleY(1.15);
+  transition: 0.4s;
+}
+
+.my-aboutus-card {
+  border: none;
+  outline: none;
+  margin-top: 1.5rem;
+  box-shadow: rgba(255, 254, 254, 0.363) 0px 25px 20px -20px;
+}
+
+.my-aboutus-card:hover {
+  cursor: pointer;
+  transform: scaleY(1.1);
+  transition: 0.4s;
+}
+
+.howItWorks-cont {
+  background-color: black;
+  margin-top: 3rem;
+}
+
+.instructions,
+.feature-cards {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ########################################################################################## */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* #                                     ALL PLANS PAGE                                     # */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* ########################################################################################## */
+
+.allPlan-main-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.345);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.allPlans-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width : 100%;
+}
+
+.allPlans-top-heading-cont {
+  width : 85%;
+  text-align: center;
+}
+
+.all-plans-cont-filter-options {
+  top: 8.5rem;
+  right: 6rem;
+}
+
+.allPlans-bottom-cont {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.plans-sort-option-cont {
+  background-color: rgb(92, 181, 72);
+  height : 10rem;
+  width : 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top : 8rem;
+  right : 7.5rem;
+}
+
+.plan-option {
+  width : 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height : 25%;
+}
+
+/* ########################################################################################## */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* #                                     LOGIN-SIGNUP PAGE                                  # */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* ########################################################################################## */
+
+.login-signup-cont {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #38ef7d;
+  background: -webkit-linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+  height: 3rem;
+  background-color: rgb(92, 181, 72);
+  cursor: pointer;
+}
+
+.form-container {
+  width: 45%;
+  background-color: #323d36;
+  color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.submit-btn {
+  background-color: rgb(92, 181, 72);
+  outline: "none";
+  border: none;
+  color: white;
+}
+
+.active-class {
+  background-color: rgba(149, 157, 165, 0.2);
+  pointer-events: none;
+}
+
+.unactive-class {
+  background-color: rgb(92, 181, 72);
+}
+
+.forgot-password:hover {
+  color: rgb(92, 181, 72);
+}
+
+/* ########################################################################################## */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* #                            FORGOT-RESET PASSWORD PAGE                                  # */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* ########################################################################################## */
+
+.forgot-password-main-cont {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-password-cont {
+  width: 50%;
+  background-color: rgb(92, 181, 72);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.reset-password-main-cont {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-password-form-cont {
+  width: 50%;
+  background-color: rgb(92, 181, 72);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+/* ########################################################################################## */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* #                                      PROFILE PAGE                                      # */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* ########################################################################################## */
+
+.profile-main-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.512);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+.profile-cont {
+  width: 80%;
+}
+
+.profile-top-cont {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+  align-items: center;
+  width: 100%;
+  margin-right: 5rem;
+}
+
+.profile-top-left-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.profile-top-right-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 50%;
+}
+
+.profile-bottom-cont {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 90%;
+}
+
+/* ########################################################################################## */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* #                                 PLAN DETAILS PAGE                                      # */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* ########################################################################################## */
+
+.plan-details-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+}
+
+.card-main-cont {
+  display: flex;
+  width: 60%;
+  height: 20rem;
+  background-color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card-left-cont {
+  width: 40%;
+}
+
+.card-left-cont img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-right-cont {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.plan-details-bottom-cont {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-form-cont {
+  width: 60%;
+}
+
+.reviews-cont {
+  padding: 2rem;
+}
+
+.user-comment-container {
+  background-color: #d6f3e2;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 10px;
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+
+.user-comment-container-left-part {
+  width: 90%;
+  border-right: 2px solid rgb(92, 181, 72);
+  padding-right: 1.5rem;
+}
+
+.user-comment-container-right-part {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ########################################################################################## */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* #                              USER VERIFICATION PAGE                                    # */
+/* #                                                                                        # */
+/* #                                                                                        # */
+/* ########################################################################################## */
+
+.verify-user-main-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+/* ########################################################################################## */
+/* #****************************************************************************************# */
+/* #*                                                                                      *# */
+/* #*                                   MEDIA QUERIES                                      *# */
+/* #*                                                                                      *# */
+/* #****************************************************************************************# */
+/* ########################################################################################## */
+
+@media screen and (min-width : 1025px){
+ 
+  .all-plans-cont-filter-options {
+    top: 8rem;
+    right: 7.5rem;
+  }
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+  .banner-information h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .banner-left-cont span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .all-plans-cont-filter-options {
+    top: 8rem;
+    right: 5rem;
+  }
+
+  .plans-sort-option-cont {
+    right : 5rem;
+  }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                              HOME PAGE - BANNER - SECTION                              # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .banner-cont {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .banner-left-cont {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-information h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .banner-left-cont span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .banner-right-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-right-cont img {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - SPECIAL DISH - SECTION                            # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .special-bottom-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-card {
+    margin-top: 2.5rem;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - FRESH VEGETABLES - SECTION                        # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .fved-cont {
+    flex-direction: column;
+  }
+
+  .fved-left-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fved-right-cont {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - CHEF DETAILS - SECTION                            # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .chef-details-cont {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chef-right-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chef-left-cont {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chef-right-cont img {
+    width: 80%;
+    height: 80%;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - TESTONOMIAL - SECTION                             # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .testonomial-cont {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bottom-testonomial-cont {
+    flex-direction: column;
+  }
+
+  .testo-card-cont {
+    width : 80%;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - FOOTER - SECTION                                  # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .footer-cont {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .cont {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                                    ABOUT US - SECTION                                  # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .about-awasome-features-part {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .awasome-right-cont {
+    width: 100%;
+  }
+
+  .awasome-left-cont {
+    width: 100%;
+    flex-direction: column;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 1rem;
+  }
+
+  .awasome-card {
+    margin-top: 1.25rem;
+  }
+
+  .about-middile-part {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutus-middle-left-cont {
+    width: 100%;
+  }
+
+  .aboutus-middle-right-cont {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 1.5rem;
+    text-align: justify;
+    margin-top: 1.5rem;
+  }
+
+  .instructions {
+    flex-direction: column;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                                    PLAN DETAILS PAGE                                   # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .plan-details-top-cont {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .comment-form-cont {
+    width: 90%;
+  }
+
+  .comment-box-right-part {
+    font-size: 0.6rem;
+  }
+
+  .user-comment-container {
+    width: 100% !important;
+    flex-direction: column;
+  }
+
+  .user-comment-container-left-part {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid rgb(92, 181, 72);
+    padding-bottom: 1.5rem;
+  }
+
+  .user-comment-container-right-part {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+  }
+
+  .comment-cont {
+    width: 100%;
+  }
+
+  .card-main-cont {
+    flex-direction: column;
+    height: 60vh;
+    width: 18rem;
+  }
+
+  .card-left-cont {
+    width: 100%;
+    height: 40%;
+  }
+
+  .card-right-cont {
+    width: 100%;
+    height: 60%;
+    padding: 0.5rem 0;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .forgot-password-cont {
+    width: 75%;
+  }
+
+  .all-plans-cont-filter-options {
+    top: 7.5rem;
+    right: 3.5rem;
+  }
+
+  .plans-sort-option-cont {
+    right : 4rem;
+  }
+
+  .nav-bar-cont {
+    padding : 1rem 2rem;
+    justify-content: space-between;
+  }
+
+  .nav-bar-slider-cont {
+    width : 60%;
+    z-index : 100 !important;
+  }
+
+  .nav-middle-part {
+    display: none;
+  }
+
+  .nav-right-part {
+    display : flex;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                              HOME PAGE - BANNER - SECTION                              # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .banner-cont {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .banner-left-cont {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-information h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .banner-left-cont span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .banner-right-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-right-cont img {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - SPECIAL DISH - SECTION                            # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .special-bottom-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-card {
+    margin-top: 2.5rem;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - FRESH VEGETABLES - SECTION                        # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .fved-cont {
+    flex-direction: column;
+  }
+
+  .fved-left-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fved-right-cont {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - CHEF DETAILS - SECTION                            # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .chef-details-cont {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chef-right-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chef-left-cont {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chef-right-cont img {
+    width: 80%;
+    height: 80%;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - TESTONOMIAL - SECTION                             # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .testonomial-cont {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bottom-testonomial-cont {
+    flex-direction: column;
+  }
+
+  .testo-card-cont {
+    width : 95%;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                          HOME PAGE - FOOTER - SECTION                                  # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .footer-cont {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .cont {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                                    ABOUT US - SECTION                                  # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .video-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-awasome-features-part {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .awasome-right-cont {
+    width: 100%;
+  }
+
+  .awasome-left-cont {
+    width: 100%;
+    flex-direction: column;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 1rem;
+  }
+
+  .awasome-card {
+    margin-top: 1.25rem;
+  }
+
+  .about-middile-part {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutus-middle-left-cont {
+    width: 100%;
+  }
+
+  .aboutus-middle-right-cont {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 1.5rem;
+    text-align: justify;
+    margin-top: 1.5rem;
+  }
+
+  .instructions {
+    flex-direction: column;
+  }
+
+  /* ########################################################################################## */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* #                                    PLAN DETAILS PAGE                                   # */
+  /* #                                                                                        # */
+  /* #                                                                                        # */
+  /* ########################################################################################## */
+
+  .plan-details-top-cont {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .comment-form-cont {
+    width: 90%;
+  }
+
+  .comment-box-right-part {
+    font-size: 0.6rem;
+  }
+
+  .user-comment-container {
+    width: 100% !important;
+    flex-direction: column;
+  }
+
+  .user-comment-container-left-part {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid rgb(92, 181, 72);
+    padding-bottom: 1.5rem;
+  }
+
+  .user-comment-container-right-part {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+  }
+
+  .comment-cont {
+    width: 100%;
+  }
+
+  .card-main-cont {
+    flex-direction: column;
+    height: 60vh;
+    width: 18rem;
+  }
+
+  .card-left-cont {
+    width: 100%;
+    height: 40%;
+  }
+
+  .card-right-cont {
+    width: 100%;
+    height: 60%;
+    padding: 0.5rem 0;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .forgot-password-cont {
+    width: 75%;
+  }
+
+  .all-plans-cont-filter-options {
+    top: 7rem;
+    right: 2rem;
+  }
+
+  .plans-sort-option-cont {
+    top : 7.5rem;
+    right : 2rem;
+  }
+
+  .profile-top-cont {
+    flex-direction: column;
+    width : 100%;
+    margin-right: 0;
+  }
+
+  .profile-top-left-cont {
+    width : 100%;
+  }
+
+  .profile-top-right-cont {
+    margin-top: 2rem;
+    width : 100%;
+  }
+
+  .nav-bar-cont {
+    justify-content: space-between;
+    padding : 1rem 2rem;
+  }
+
+  .nav-bar-slider-cont {
+    width : 60%;
+  }
+
+  .nav-middle-part {
+    display: none;
+  }
+
+  .nav-right-part {
+    display : flex;
+  }
+
+  .user-menu-items {
+    display: flex;
+    position: absolute;
+    right : -2.5rem;
+    background-color: #11998e;
+  }
+
+}
